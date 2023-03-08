@@ -5,7 +5,7 @@ GitHub action to set up Java, Clojure, and Node environments. To run, invoke it 
 ``` yaml
     steps:
       - name: Setup CI Environment
-        uses: yetanalytics/actions/setup-env@<tag>
+        uses: yetanalytics/action-setup-env@<tag>
         with:
             java-version: '11'
             java-distribution: 'temurin'
