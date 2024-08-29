@@ -16,29 +16,28 @@ inputs:
   node-version:
     description: Version of Node to install
     required: true
-    default: '16'
+    default: '20'
 
   clojure-version:
     description: Version of Clojure CLI to install
     required: true
-    default: '1.11.1.1165'
+    default: '1.11.4.1474'
 
 runs:
   using: "composite"
   steps:
     - name: Setup Java
-      uses: actions/setup-java@v3
+      uses: actions/setup-java@v4
       with:
         distribution: ${{ inputs.java-distribution }}
         java-version: ${{ inputs.java-version }}
 
     - name: Setup Node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.node-version }}
 
     - name: Setup Clojure
-      uses: DeLaGuardo/setup-clojure@10.2
+      uses: DeLaGuardo/setup-clojure@12.5
       with:
         cli: ${{ inputs.clojure-version }}
-

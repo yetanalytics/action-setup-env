@@ -9,8 +9,8 @@ GitHub action to set up Java, Clojure, and Node environments. To run, invoke it 
         with:
             java-version: '11'
             java-distribution: 'temurin'
-            node-version: '16'
-            clojure-version: '1.11.1.1165'
+            node-version: '20'
+            clojure-version: '1.11.4.1474'
 ```
 
 Default options are shown, they may be omitted.
@@ -23,4 +23,3 @@ Will do the following:
 * Install Clojure CLI
 
 which will provide an environment suitable for testing and building Clojure(Script) projects.
-
