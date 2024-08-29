@@ -16,7 +16,7 @@ inputs:
   node-version:
     description: Version of Node to install
     required: true
-    default: '16'
+    default: '20'
 
   clojure-version:
     description: Version of Clojure CLI to install
@@ -41,4 +41,3 @@ runs:
       uses: DeLaGuardo/setup-clojure@10.2
       with:
         cli: ${{ inputs.clojure-version }}
-
